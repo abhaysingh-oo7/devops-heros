@@ -13,3 +13,12 @@
 
 
 ---
+
+## Task 2: Git Cherry-Pick
+Cherry-pick picks a single commit from `test2` branch into `test1` branch.
+
+### Create a file on `test2` before cherry-pick:
+![alt text](image-1.png)
+
+### History on `test1` after cherry-pick:
+![alt text](image-2.png)
