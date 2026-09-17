@@ -1,9 +1,12 @@
 # Session 9: Kubernetes Fundamentals & Cluster Architecture
 
 **Author:** Abhay Singh Bhadauria
+
 **Course:** SST DevOps & Cloud [SWE]
+
 **Session:** 09 - Kubernetes Fundamentals
-**Repository:** devops-heros / session9-k8s
+
+**Repository:** `devops-heros / session9-k8s`
 
 ## Task 1: Minikube & CLI Installation Verification
 
