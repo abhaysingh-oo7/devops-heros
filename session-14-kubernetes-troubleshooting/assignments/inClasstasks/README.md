@@ -6,8 +6,8 @@
 
 ## 2. Inspecting Pod Details (`kubectl describe`)
 *Demonstrates detailed resource information and lifecycle events.*
-![alt text](image-21.png)
-![alt text](image-22.png)
+![alt text](image_21.png)
+![alt text](image_22.png)
 
 
 ## 3. Viewing Application Output (`kubectl logs`)
