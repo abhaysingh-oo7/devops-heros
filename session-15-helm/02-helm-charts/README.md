@@ -8,7 +8,16 @@ One command. Entire application deployed.
 
 ---
 
-## 1. What is a Helm Chart?
+## 1. What is a Helm Chart?The IRR of a project is the discount rate at which:
+Click on an option to submit your answer
+A
+NPV is maximum
+B
+NPV equals zero
+C
+Profit is maximum
+D
+Cash flow is maximum
 
 A Helm Chart is a directory with a specific structure. It holds:
 

@@ -10,3 +10,8 @@ keywords:
 maintainers:
   - name: Student
     email: student@example.com
+
+metadata:
+  labels:
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    app-version: "{{ .Chart.AppVersion }}"
