@@ -190,7 +190,7 @@ Push to GitHub
 └────────┬────────┘
          │
 ┌────────▼────────┐
-│  STEP 6: Push   │  Pushes image to GitHub Container Registry
+│  STEP 6: Push   │  Pushes image to Docker Hub
 └────────┬────────┘
          │ (only on push to main)
 ┌────────▼────────┐
@@ -215,15 +215,15 @@ Go to **GitHub repo → Settings → Secrets and variables → Actions** and add
 
 | Secret Name | Value |
 |-------------|-------|
-| `KUBECONFIG` | Contents of your `~/.kube/config` file (needed for Step 7 deploy) |
+| `DOCKERHUB_TOKEN` | A Docker Hub access token for the `carbs411` account |
 
 > ℹ️ `GITHUB_TOKEN` is automatically provided by GitHub — you don't need to add it manually.
 
 ### View your Docker image after push
 
-After Step 6 runs, your image is available at:
+After Step 6 runs, your image is available in Docker Hub at:
 ```
-ghcr.io/YOUR_USERNAME/hey-cicd:latest
+docker.io/carbs411/devsecops-homework:latest
 ```
 
 Go to **GitHub repo → Packages** to see it.
@@ -287,7 +287,7 @@ kubectl delete -f k8s/service.yaml
 | **SCA** (Software Composition Analysis) | pip-audit | Pipeline Step 3 |
 | **Containerisation** | Docker | `Dockerfile` |
 | **Container Image Scanning** | Trivy | Pipeline Step 5 |
-| **Container Registry** | GitHub Container Registry (GHCR) | Pipeline Step 6 |
+| **Container Registry** | Docker Hub | Pipeline Step 6 |
 | **Orchestration** | Kubernetes | `k8s/` folder |
 | **CI/CD Automation** | GitHub Actions | `.github/workflows/devsecops.yml` |
 
