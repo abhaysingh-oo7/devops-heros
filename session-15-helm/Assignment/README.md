@@ -3,18 +3,6 @@
 
 ## Task 1: Helm Commands
 
-
-The screenshots show these results:
-
-- `02-1.png`: created `demo-chart`, inspected its generated files, and rendered it with `helm template`.
-- `02-2.png` and `02-3.png`: installed `demo-release`, confirmed its pod was running and the release was listed, then uninstalled it.
-- `03-1.png` and `03-2.png`: rendered and installed `simple-chart`; inspected the resulting pod and Service.
-- `04-1.png`: linted `my-app`; Helm reported one chart linted and zero failures, with an informational note that `values.yaml` was absent.
-- `01-1.png`: listed releases and uninstalled `my-nginx`.
-- `07-1.png` and `07-2.png`: installed `web-app`, listed releases, upgraded it to three replicas (revision 2), ran `helm upgrade --install` (revision 3), and uninstalled it.
-- `09-1.png` and `09-2.png`: linted and rendered `guestbook-chart`, installed `my-guestbook`, and checked its pod, Service, and ConfigMap. The guestbook pod is shown as `1/1 Running`.
-- `09-3.png`: viewed `my-guestbook` history, ran rollback to revision 1, and uninstalled the release.
-
 Screenshots:
 
 ### Chart Creation, Rendering, and Linting
