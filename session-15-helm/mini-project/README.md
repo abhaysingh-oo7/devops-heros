@@ -180,6 +180,10 @@ helm template notes-dev notes-chart
 
 Check that all `{{ }}` are replaced properly.
 
+![Mini-project chart lint and rendered templates](../Assignment/ss/mini-project1.png)
+
+The captured output shows `helm lint notes-chart` passing and `helm template notes-dev notes-chart` rendering the ConfigMap, Service, and Deployment.
+
 ---
 
 ## Step 10: Install (Development)
@@ -242,6 +246,10 @@ notes-dev-deploy-bbbb           1/1     Running   0
 notes-dev-deploy-cccc           1/1     Running   0
 ```
 
+![Mini-project workload verification](../Assignment/ss/mini-project2.png)
+
+The screenshot shows three `notes-dev-deploy` pods in `Running` state, alongside other workloads in the cluster.
+
 ---
 
 ## Step 12: Check Release History
@@ -293,6 +301,10 @@ Expected output:
 Rollback was a success! Happy Helming!
 ```
 
+![Mini-project upgrade history, bad image upgrade, rollback, and uninstall](../Assignment/ss/mini-project3.png)
+
+The captured history includes revisions 1 through 5, followed by an upgrade using a deliberately invalid image tag, a successful rollback to revision 2, and the uninstall command. The screenshot does not show a pod health check between rollback and uninstall, so it confirms the Helm rollback command succeeded but not the post-rollback application health.
+
 Pods are healthy again:
 
 ```bash
@@ -317,6 +329,10 @@ kubectl get services
 ```
 
 All resources are gone.
+
+![Mini-project post-uninstall resource check](../Assignment/ss/mini-project4.png)
+
+The immediate pod listing shows the three `notes-dev` pods in `Terminating` state, while the Service listing no longer shows the Notes Service. Kubernetes removes pods asynchronously; wait for termination before treating cleanup as complete.
 
 ---
 
