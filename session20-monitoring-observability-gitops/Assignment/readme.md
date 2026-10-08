@@ -193,17 +193,8 @@ The cluster-wide pod list includes the Argo CD and monitoring namespaces:
 
 These screenshots show a healthy synchronized deployment. They do not capture a Git commit or a demonstrated change propagating from Git; to complete that part of the workflow, change a manifest in the watched repository, commit and push it, then verify that Argo CD reconciles the deployment.
 
-## Deliverables Checklist
-
-- **Monitoring demo:** Kind cluster, Prometheus/Grafana stack, CPU and memory dashboards, application health checks, and alerting page.
-- **Observability documentation:** Definitions and purpose of metrics, logs, and traces; common tools; Kubernetes signal collection and correlation.
-- **GitOps demo:** Argo CD application manifest and screenshots showing `Synced`/`Healthy` status and ready replicas.
-- **Screenshots:** Embedded above and grouped by task.
-- **README:** This file documents the architecture, concepts, commands, evidence, and remaining demo gaps.
 
 ## Cleanup
-
-Delete the local Kind cluster when finished. This removes the demo workloads, monitoring stack, and Argo CD resources in that cluster:
 
 ```bash
 kind delete cluster --name session20
