@@ -81,6 +81,3 @@ terraform destroy
 ![Continuation of Terraform apply output](destroy2.jpeg)
 
 
-## AWS permission note
-
-The successful-apply screenshot is from an earlier run: it shows a different AWS account and the bucket `yatri1107-devops-2026-abhay`. The current configuration uses `praleh-terraformer007`. An AWS Organizations service control policy explicitly denied `s3:CreateBucket` for the current account, so an IAM allow alone will not make the apply succeed. An Organizations administrator must remove or narrow the matching SCP deny before creation is permitted.
