@@ -77,6 +77,9 @@ When the assignment is complete, destroy the Terraform-managed resources if you 
 ```bash
 terraform destroy
 ```
+![Continuation of Terraform apply output](destroy1.jpeg)
+![Continuation of Terraform apply output](destroy2.jpeg)
+
 
 ## AWS permission note
 
