@@ -114,12 +114,3 @@ These screenshots document the current VPC networking implementation:
 
 	![Terraform destroy complete](image7.png)
 
-These screenshots document the complete workflow for the current VPC networking implementation, including state inspection and cleanup. For the final end-to-end architecture deliverable, add EC2 and S3 to the Terraform configuration and capture updated plan/apply/output screenshots that include those resources.
-
-## Deliverables
-
-- Terraform project files with AWS provider, variables, resources, outputs, and implicit dependencies.
-- AWS infrastructure matching the target architecture: VPC, subnet, security group, EC2, and S3, with required network resources.
-- Architecture diagram showing resource relationships.
-- README with setup, Terraform commands, verification, and cleanup instructions.
-- Screenshots of plan, apply, outputs/state, and destroy for the completed project.
