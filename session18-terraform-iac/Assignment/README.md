@@ -58,8 +58,6 @@ The following screenshot shows a successful apply from an earlier run:
 
 ![Earlier successful S3 bucket creation and Terraform outputs](img1.jpeg)
 
-`img2.jpeg`, `img3.jpeg`, and `img4.jpeg` are identical copies of `img1.jpeg`.
-
 ## 5. Inspect the result
 
 After a successful apply, inspect Terraform's state and outputs, then list buckets visible to the configured AWS identity:
